@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
-		"preview": "npm run build && wrangler dev",
+		"preview": "npm run build && wrangler dev --test-scheduled",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -15,7 +15,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^6.0.0",
-		"@sveltejs/adapter-cloudflare": "^7.1.0",
+		"@sveltejs/adapter-cloudflare": "https://pkg.pr.new/sveltejs/kit/@sveltejs/adapter-cloudflare@14029",
 		"@sveltejs/kit": "^2.22.0",
 		"@sveltejs/vite-plugin-svelte": "^6.0.0",
 		"svelte": "^5.0.0",
